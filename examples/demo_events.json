@@ -1,0 +1,19 @@
+{"type": "landmark", "id": "auth-cluster", "label": "Authentication", "keywords": ["jwt", "oauth", "session", "login", "auth"], "timestamp": 1706812340}
+{"type": "landmark", "id": "db-cluster", "label": "Database", "keywords": ["database", "sql", "schema", "migration", "model"], "timestamp": 1706812341}
+{"type": "landmark", "id": "api-cluster", "label": "API", "keywords": ["api", "rest", "endpoint", "controller", "route"], "timestamp": 1706812342}
+{"type": "landmark", "id": "ui-cluster", "label": "Frontend", "keywords": ["react", "component", "ui", "frontend", "css"], "timestamp": 1706812343}
+{"type": "agent_update", "agent_id": "explorer-1", "status": "active", "focus": ["authentication", "jwt"], "intensity": 0.8, "message": "Analyzing auth flow", "timestamp": 1706812345}
+{"type": "agent_update", "agent_id": "planner-1", "status": "thinking", "focus": ["database", "schema"], "intensity": 0.4, "message": "Designing schema", "timestamp": 1706812346}
+{"type": "agent_update", "agent_id": "builder-1", "status": "active", "focus": ["api", "endpoints"], "intensity": 0.6, "message": "Implementing REST endpoints", "timestamp": 1706812347}
+{"type": "connection", "from": "explorer-1", "to": "planner-1", "label": "found relevant file", "timestamp": 1706812348}
+{"type": "agent_update", "agent_id": "explorer-1", "status": "active", "focus": ["authentication", "middleware"], "intensity": 0.9, "message": "Found security issue!", "timestamp": 1706812350}
+{"type": "agent_update", "agent_id": "tester-1", "status": "active", "focus": ["testing", "unit"], "intensity": 0.5, "message": "Running test suite", "timestamp": 1706812351}
+{"type": "connection", "from": "explorer-1", "to": "builder-1", "label": "needs fix", "timestamp": 1706812352}
+{"type": "agent_update", "agent_id": "planner-1", "status": "active", "focus": ["database", "migration"], "intensity": 0.7, "message": "Creating migration", "timestamp": 1706812353}
+{"type": "agent_update", "agent_id": "builder-1", "status": "active", "focus": ["authentication", "jwt"], "intensity": 0.8, "message": "Fixing auth middleware", "timestamp": 1706812355}
+{"type": "connection", "from": "builder-1", "to": "tester-1", "label": "ready for testing", "timestamp": 1706812356}
+{"type": "agent_update", "agent_id": "reviewer-1", "status": "thinking", "focus": ["api", "endpoints"], "intensity": 0.3, "message": "Reviewing API design", "timestamp": 1706812357}
+{"type": "agent_update", "agent_id": "explorer-1", "status": "idle", "focus": ["authentication"], "intensity": 0.2, "message": "Waiting for fix", "timestamp": 1706812358}
+{"type": "agent_update", "agent_id": "tester-1", "status": "active", "focus": ["testing", "integration"], "intensity": 0.9, "message": "Tests passing!", "timestamp": 1706812360}
+{"type": "connection", "from": "tester-1", "to": "reviewer-1", "label": "all tests pass", "timestamp": 1706812361}
+{"type": "agent_update", "agent_id": "reviewer-1", "status": "active", "focus": ["api", "documentation"], "intensity": 0.6, "message": "Approved for merge", "timestamp": 1706812362}
